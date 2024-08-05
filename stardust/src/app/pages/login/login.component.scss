@@ -1,0 +1,47 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(96, 46, 42);
+}
+
+.title-container {
+    background-color: black;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    img{
+        width: 30vw;
+        height: auto;
+    }
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+      }
+    20% {
+        transform: translateY(-10vh);
+      }
+    40% {
+        transform: translateY(10vh);
+      }
+    60% {
+        transform: translateY(-10vh);
+      }
+    80% {
+        transform: translateY(10vh);
+      }
+    100% {
+        transform: translateY(0);
+      }
+  }
+
+.title-container img {
+    animation: moveUpDown 20s ease-in-out infinite;
+}
