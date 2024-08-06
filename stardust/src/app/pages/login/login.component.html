@@ -1,13 +1,24 @@
 <div class="container">
-    <div class="title-container">
-      <img src="../../../assets/stardust.png" />
-    </div>
-  
-    <div class="form-container">
-      <h2>Sign In</h2>
-      <form>
-        
-      </form>
-    </div>
+  <div class="title-container">
+    <img src="../../../assets/stardust.png" />
   </div>
-  
+
+  <div class="form-container">
+    <h2>Sign In</h2>
+    <form [formGroup]="loginForm">
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" formControlName="email" />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" />
+        </mat-form-field>
+        <div>
+          <button mat-raised-button color="primary">Sign In</button>
+          <span style="margin: 5px;"></span>
+          <button mat-raised-button color="primary">Sign Up</button>
+        </div>
+    </form>
+  </div>
+</div>
